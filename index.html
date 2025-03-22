@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graz Audio Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🎧 Graz Audio Guide 🎧</h1>
+            <p>Explore the beautiful sounds of Graz, Austria</p>
+        </header>
+
+        <div class="main-content">
+            <div id="map-container">
+                <!-- Map will be rendered here -->
+            </div>
+
+            <div class="audio-player">
+                <div class="now-playing">
+                    <h3>Now Playing</h3>
+                    <p id="location-title">Select a location on the map</p>
+                </div>
+                <div class="controls">
+                    <button id="play-btn" disabled>▶️ Play</button>
+                    <button id="pause-btn" disabled>⏸️ Pause</button>
+                    <div class="volume-control">
+                        <label for="volume">Volume:</label>
+                        <input type="range" id="volume" min="0" max="1" step="0.1" value="0.7">
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-info">
+                <h3>Location Information</h3>
+                <div id="location-info-content">
+                    <p>Click on an audio hotspot to learn more about the location and listen to its unique soundscape.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tours-section">
+            <h2>Featured Audio Tours</h2>
+            <div class="tour-cards">
+                <div class="tour-card" data-tour="historical">
+                    <h3>🏰 Historical Graz</h3>
+                    <p>Experience the sounds of medieval architecture and historical landmarks.</p>
+                </div>
+                <div class="tour-card" data-tour="cultural">
+                    <h3>🎭 Cultural Hotspots</h3>
+                    <p>From opera house to street performers, immerse yourself in Graz's cultural sounds.</p>
+                </div>
+                <div class="tour-card" data-tour="nature">
+                    <h3>🌿 Green Spaces</h3>
+                    <p>Natural soundscapes in urban settings throughout the city.</p>
+                </div>
+                <div class="tour-card" data-tour="culinary">
+                    <h3>🍽️ Culinary Journey</h3>
+                    <p>The sounds of food markets, cafés, and local eateries.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>🎧 Best experienced with headphones 🎧</p>
+            <p>Developed with ❤️ in Graz, Austria</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
