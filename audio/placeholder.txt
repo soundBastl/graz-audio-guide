@@ -1,0 +1,12 @@
+This is a placeholder file for the audio directory.
+
+In a real application, this directory would contain high-quality field recordings from various locations in Graz:
+- hauptplatz.mp3
+- schlossberg.mp3
+- kunsthaus.mp3
+- murinsel.mp3
+- farmersmarket.mp3
+- stadtpark.mp3
+- university.mp3
+
+Audio files should be in MP3 format with minimum quality of 192kbps for optimal experience.
